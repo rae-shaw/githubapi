@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>GitHub Repo API</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  </head>
+  <body>
+     <form class="username-form">
+    <fieldset name="userGitHubRepo">
+      <legend>Repositories Search</legend>
+      <label>Enter username.</label>
+      <input placeholder="rae_shaw" type="text" name="username" id='js-username-input' required class="input">
+        </input>
+        <button type="submit">submit</button>
+    </fieldset>
+
+    <div class="container">
+      <h1>GitHub Repo Finder</h1>
+        <section class="hidden" id="results">
+          <h2>Search results</h2>
+            <ul id=results-list>
+           </ul>
+        </section>
+        <p id="js-error-message" class="error-message"></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
